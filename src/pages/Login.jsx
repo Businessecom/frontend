@@ -22,7 +22,7 @@ const Login = () => {
   }
   
   if (isAuthenticated) {
-    return <Navigate to="/" replace />
+    return <Navigate to="/dashboard" replace />
   }
   
   return (
@@ -86,6 +86,9 @@ const Login = () => {
           </div>
           
           <div className="text-sm text-center">
+            <Link to="/forgot-password" className="font-medium text-blue-600 hover:text-blue-500 mr-4">
+              Forgot your password?
+            </Link>
             <Link to="/register" className="font-medium text-blue-600 hover:text-blue-500">
               Don't have an account? Sign up
             </Link>

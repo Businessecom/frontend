@@ -13,7 +13,7 @@ const Sidebar = () => {
   const { logout, user } = useAuth()
   
   const navigation = [
-    { name: 'Dashboard', href: '/', icon: HomeIcon },
+    { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
     { name: 'Projects', href: '/projects', icon: FolderIcon },
     { name: 'Conversations', href: '/conversations', icon: ChatBubbleLeftRightIcon },
     { name: 'AI Assistant', href: '/ai-assistant', icon: SparklesIcon },
